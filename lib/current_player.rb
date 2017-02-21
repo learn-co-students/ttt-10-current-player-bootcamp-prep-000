@@ -1,8 +1,6 @@
 def turn_count(board)
 
-  count = 0
-  board.each { |x| count += 1 if ["O","X"].include?(x)}
-  count  
+  9-board.count(" ")
 
 end
 
