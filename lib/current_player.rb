@@ -8,5 +8,7 @@ end
 
 def current_player(board)
   turns_played = turn_count(board)
-  (turns_played % 2) == 0 ? "X" : "O"
+  turns_played.even? == true ? "X" : "O"
+  # you could have also used (turns_played % 2 == 0)
+  # or even (( (-1)**turns_played + 1 ) / 2) == 0
 end
