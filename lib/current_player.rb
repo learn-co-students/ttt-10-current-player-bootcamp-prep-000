@@ -2,7 +2,7 @@ def turn_count(board)
   counter = 0
 
   board.each do |index|
-    index != " " ? counter += 1
+    if index != " " then counter += 1 end
   end
   counter
 end
