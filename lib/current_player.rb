@@ -10,6 +10,5 @@ end
 
 
 def current_player(board)
-
-  turn_count(board) % 2 == 1 ? "O" : "X"
+  turn_count(board).odd? ? "O" : "X"
 end
