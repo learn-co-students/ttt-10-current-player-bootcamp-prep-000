@@ -3,8 +3,8 @@ def turn_count(board)
   # board.count{|token| token == "X" || token == "O"}
 
   turns = 0
-  board.each do |token|
-    if token == "X" || token == "O"
+  board.each do |letter|
+    if letter == "X" || letter == "O"
       turns += 1
     end
   end
