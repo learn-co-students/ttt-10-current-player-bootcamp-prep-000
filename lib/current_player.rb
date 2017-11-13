@@ -12,7 +12,7 @@ end
 def current_player(board)
   count = turn_count(board)
   player = "O"
-  if count%2==0
+  if count.even?
     player = "X"
   end
   player
