@@ -8,9 +8,11 @@ end
 
 def current_player (board_array)
 turn = turn_count(board_array)
-    if turn%2 == 0
-        return "X"
-    else
-        return "O"
-    end
+#    if turn%2 == 0
+#        return "X"
+#    else
+#        return "O"
+#    end
+turn%2 == 0 ? "X" : "O"
+
 end
