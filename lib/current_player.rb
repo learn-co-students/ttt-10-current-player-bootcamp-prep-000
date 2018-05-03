@@ -3,5 +3,11 @@ def turn_count(array)
   array.each do |index|
     (index == "X" || index == "O") ? counter += 1 : nil
   end 
-  puts "#{counter} turns have been played."
+  return counter
 end
+
+def current_player(array)
+  x = turn_count(array)
+  x % 2 == 0 ? player = "X" : player = "O"
+  return player
+end 
