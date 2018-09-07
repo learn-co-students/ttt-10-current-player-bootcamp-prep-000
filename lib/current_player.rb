@@ -1,17 +1,12 @@
 def current_player(board)
   count = turn_count(board)
-  if count % 2 == 1
-    return "O"
-  else
-    return "X"
-  end
-    
+  count.odd? ? "O" : "X"
 end
 
 def turn_count(board)
   counter = 0
   board.each do |space|
-    if !(space == " " || space == "" || space == nil)
+    if !(space == " " || space == "" || space = NIL)
       counter += 1
     end
   end
