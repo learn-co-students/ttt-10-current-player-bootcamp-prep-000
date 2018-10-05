@@ -10,11 +10,18 @@ end
 
 def current_player(board)
   turn = turn_count(board)
-  board.each do |char|
+
     if turn == 0 || turn % 2 == 0
       return "X"
     else
       return "O"
     end
-  end
+
 end
+
+# # Ternary Operator
+#
+# def current_player(board)
+#   turn = turn_count(board)
+#     turn % 2 == 0 ? "X" : "O"
+# end
