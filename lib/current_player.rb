@@ -11,7 +11,7 @@ def current_player(board)
   
   if count==0
     return "X"
-  elsif count%2==0 
+  elsif count.is_even? 
     return "X"
   else
     return "O"
