@@ -1,16 +1,18 @@
 def turn_count(board)
-  var length = 0
+  length = 0
   board.each do |moves|
-    if moves != " " || moves != "" || moves != nil
+    if moves != " "
       length+=1
-    else
-      return
     end
-    current_player(length)
+  end
+    return length
 end
 
-def current_player(moves)
-    var turn = ""
-    moves%2 == 0 ? turn = 'X': turn = 'O'
-    return turn
+def current_player(board)
+
+  if turn_count(board)%2 == 0
+    return "X"
+  else
+    return "O"
+  end
 end
