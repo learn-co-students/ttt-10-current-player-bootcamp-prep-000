@@ -50,4 +50,35 @@ def current_player(board)
 #  end  
 end  
 
+# Pseudo code  for #current player
+
+
+# Identify the problem
+# "X" if it is player "X"'s turn, and an "O" if it is player "O"'s turn.
+
+# Identify the output that would solve the problem   
+# place X   or O  by # turns played
+
+# Name the Procedure That Fixes the Problem 
+# even number of turn return "X" odd number of turn return "O
+
+# Identify What Inputs are Needed to Create the Output
+# number of current turn 
+# Board
+
+#  Define the Procedure’s Implementation
+
+# Procedure place “X” for even turn and  “O” for odd turn(current_player, board)
+
+# “x” = even term
+# “O” = odd turn
+
+#  if current_player. Even? 
+# Puts “X”
+# Else if current_player.odd?
+# Puts “O”
+# End
+# Counter += 1
+# End
+
 
