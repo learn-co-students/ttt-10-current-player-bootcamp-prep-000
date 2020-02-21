@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 
 def turn_count(board)
     board.count do
@@ -44,11 +44,18 @@ end
 
 def current_player(board)
     turn_count(board) % 2 == 0 ? "X" : "O"
-#     if turn_count(board).odd? == "O"
-# else
-#     puts "X"
-#  end  
-end  
+#     all_odd = true
+#     if board.each do |turn|
+#     turn_count.even?
+#         puts "X"
+#         all_odd = false
+#    if board.each do |turn|
+#         turn_count.odd?
+#             puts "O" 
+#   end 
+# end
+# end
+end
 
 # Pseudo code  for #current player
 
@@ -81,4 +88,4 @@ end
 # Counter += 1
 # End
 
-
+#
