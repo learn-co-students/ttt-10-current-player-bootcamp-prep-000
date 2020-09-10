@@ -1,6 +1,18 @@
 board = ["X", " ", " ", "X", " ", " ", "X", " ", "O"]
 
 def turn_count(board)
+  turn_number = 0
+  board.each do |counter|
+    if counter == "X" || counter == "O"
+      turn_number += 1
+    else
+    end
+  end
+  turn_number
+end
+
+=begin
+def turn_count(board)
   counter = 0
   number_of_turns = 0
   while counter < board.length
@@ -13,6 +25,7 @@ def turn_count(board)
   end
   number_of_turns
 end
+=end
 
 def current_player(board)
   if turn_count(board).even?
