@@ -1,14 +1,17 @@
 def turn_count(board)
-  counter = 0
-  board.each do |item|
-    if item = "X" || item = "O"
-      counter += 1
+  turns = 0
+  board.each do |space|
+    if space == "X" || space == "O"
+      turns += 1
     end
+  end
+  turns
 end
 
 
 def current_player(board)
-# num1.even?
-
-
+  if turn_count(board).even?
+    return "X"
+  else return "O"
+  end
 end
