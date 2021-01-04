@@ -3,11 +3,11 @@ require_relative '../lib/current_player.rb'
 describe "./lib/current_player.rb" do
   describe '#turn_count' do
     it 'counts occupied positions' do
-      board1 = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
-      board2 = ["O", " ", " ", " ", "X", " ", " ", "O", "X"]
+      board = ["O", " ", " ", " ", "X", " ", " ", " ", "X"]
 
-      expect(turn_count(board1)).to eq(3)
-      expect(turn_count(board2)).to eq(4)
+
+      expect(turn_count(board)).to eq(3)
+ 
     end
   end
 
