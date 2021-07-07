@@ -1,4 +1,5 @@
 require_relative '../lib/current_player.rb'
+require 'pry'
 
 describe "./lib/current_player.rb" do
   describe '#turn_count' do
